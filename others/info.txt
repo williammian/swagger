@@ -1,0 +1,7 @@
+Abrir projeto (spring/maven) no Eclipse
+
+Rodar classe Main (Swagger2SpringBoot)
+
+Para visualizar a documentação no navegador
+localhost:8085/bytebank-api/v1/swagger-ui.html
+
