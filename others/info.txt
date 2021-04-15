@@ -1,4 +1,7 @@
-Abrir projeto (spring/maven) no Eclipse
+Gerar projeto spring/maven no editor.swagger.io
+Generate Server > Spring
+
+Abrir projeto no Eclipse
 
 Rodar classe Main (Swagger2SpringBoot)
 
