@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "titular": "Janete Silva",
+  "cpf": "01234567890",
+  "senha": "senha123",
+  "contas": [
+    {
+      "agencia": 8756,
+      "numero": 1,
+      "digito": 0,
+      "saldo": 0,
+      "cliente": null,
+      "transacoes": null
+    }
+  ]
+}
