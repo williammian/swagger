@@ -172,7 +172,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n \"valor\": 750.25,\r\n \"conta\": {\r\n   \"agencia\": 8756,\r\n   \"numero\": 1,\r\n   \"digito\": 0\r\n }\r\n}"
+					"raw": "{\r\n \"valor\": 87.00,\r\n \"conta\": {\r\n   \"agencia\": 8756,\r\n   \"numero\": 1,\r\n   \"digito\": 0\r\n }\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8085/bytebank-api/v1/transacao?tipo=deposito",
@@ -250,6 +250,53 @@
 			"response": []
 		},
 		{
+			"name": "Transacao - delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8085/bytebank-api/v1/transacao/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"transacao",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Transacao - debito",
 			"request": {
 				"auth": {
@@ -277,7 +324,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n \"valor\": 10.00,\r\n \"conta\": {\r\n   \"agencia\": 8756,\r\n   \"numero\": 1,\r\n   \"digito\": 0\r\n }\r\n}"
+					"raw": "{\r\n \"valor\": 30.00,\r\n \"conta\": {\r\n   \"agencia\": 8756,\r\n   \"numero\": 1,\r\n   \"digito\": 0\r\n }\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8085/bytebank-api/v1/transacao?tipo=debito",
