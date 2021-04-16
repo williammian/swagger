@@ -94,6 +94,57 @@
 			"response": []
 		},
 		{
+			"name": "Extrato",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8085/bytebank-api/v1/extrato/8756/1/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"extrato",
+						"8756",
+						"1",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Transacao - deposito",
 			"request": {
 				"auth": {
@@ -139,6 +190,59 @@
 						{
 							"key": "tipo",
 							"value": "deposito"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao - altera",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8085/bytebank-api/v1/transacao/2?valor=12.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"transacao",
+						"2"
+					],
+					"query": [
+						{
+							"key": "valor",
+							"value": "12.00"
 						}
 					]
 				}
