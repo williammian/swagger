@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "ee4e2d4e-f1f9-44a8-ba3d-698785145f07",
+		"name": "swagger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cliente - cadastro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cpf\": \"01234567812\",\r\n  \"senha\": \"senha123\",\r\n  \"titular\": \"Maria da Silva\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/bytebank-api/v1/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta - saldo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8085/bytebank-api/v1/conta/8756/1/0/saldo",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"conta",
+						"8756",
+						"1",
+						"0",
+						"saldo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extrato",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8085/bytebank-api/v1/extrato/8756/1/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"extrato",
+						"8756",
+						"1",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao - deposito",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"valor\": 87.00,\r\n \"conta\": {\r\n   \"agencia\": 8756,\r\n   \"numero\": 1,\r\n   \"digito\": 0\r\n }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/bytebank-api/v1/transacao?tipo=deposito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"transacao"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "deposito"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao - altera",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8085/bytebank-api/v1/transacao/2?valor=12.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"transacao",
+						"2"
+					],
+					"query": [
+						{
+							"key": "valor",
+							"value": "12.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao - delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8085/bytebank-api/v1/transacao/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"transacao",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao - debito",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "01234567890",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"valor\": 30.00,\r\n \"conta\": {\r\n   \"agencia\": 8756,\r\n   \"numero\": 1,\r\n   \"digito\": 0\r\n }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/bytebank-api/v1/transacao?tipo=debito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"bytebank-api",
+						"v1",
+						"transacao"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "debito"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
