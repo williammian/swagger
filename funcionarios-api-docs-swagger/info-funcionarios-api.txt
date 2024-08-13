@@ -1,0 +1,16 @@
+Acessar documentação interativa
+
+http://localhost:8085/funcionarios-api/swagger-ui.html#/
+
+---------------------------------------
+
+Gerar script swagger
+
+http://localhost:8085/funcionarios-api/v2/api-docs
+
+Será gerado em formato json
+
+Copiar este conteúdo e colar no editor.swagger.io
+para formatar para yaml
+
+----------------------------------------
