@@ -1,0 +1,28 @@
+https://swagger.io/tools/open-source/
+
+Swagger
+
+Swagger é um conjunto de ferramentas e especificações que ajuda a criar, documentar e consumir APIs RESTful.
+Originalmente, Swagger era o nome de um projeto de código aberto que incluía um conjunto de ferramentas para facilitar o design e a documentação de APIs. 
+O projeto foi renomeado para OpenAPI em 2016, mas muitas pessoas ainda usam o termo Swagger para se referir a essas ferramentas e especificações.
+
+Aqui estão alguns dos principais componentes do Swagger/OpenAPI:
+
+Swagger Specification / OpenAPI Specification (OAS): É um formato de especificação para descrever APIs RESTful. 
+O OAS é um padrão aberto que define como as APIs devem ser documentadas de forma estruturada e legível por máquina. 
+A especificação usa um formato JSON ou YAML para descrever os endpoints, parâmetros, respostas e outros aspectos da API.
+
+Swagger UI: É uma ferramenta que gera uma interface gráfica para interagir com a API com base na especificação OpenAPI. 
+Com o Swagger UI, você pode visualizar e testar os endpoints da API diretamente em um navegador, o que facilita o desenvolvimento e a depuração.
+
+Swagger Editor: Uma ferramenta que permite criar e editar documentos OpenAPI em um editor visual. 
+O Swagger Editor fornece feedback em tempo real sobre a especificação e ajuda a garantir que ela esteja correta e completa.
+
+Swagger Codegen / OpenAPI Generator: Ferramentas que geram automaticamente código cliente e servidor a partir da especificação OpenAPI. 
+Isso pode economizar tempo e esforço na implementação de APIs, pois você pode gerar esqueleto de código que você pode então personalizar conforme necessário.
+
+Swagger Hub: É uma plataforma colaborativa para o design e documentação de APIs. 
+Oferece uma interface baseada na web para gerenciar a especificação OpenAPI, colaborar com outras pessoas e integrar com outras ferramentas e serviços.
+
+Em resumo, Swagger/OpenAPI é uma maneira padronizada e eficiente de criar e gerenciar APIs, tornando o processo mais ágil e colaborativo, 
+e ajudando a garantir que as APIs sejam bem documentadas e fáceis de usar.
